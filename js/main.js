@@ -14,6 +14,9 @@ function getPage() {
     cat: cat.value,
     url: siteURL.value,
     }
+  if (page.url.search("http://") == -1 && page.url.search("https://") == -1){
+        page.url= "https://" + page.url;
+      }
   bookmarksList.push(page)
   console.log(bookmarksList)
   clear()
@@ -62,7 +65,6 @@ function display(){
             </div>
             <div class="col-sm-4 my-margin">
               <div><button type="button" onclick="updatePage(${i})" class="btn rounded-pill btn-info text-white"><a class="text-decoration-none text-white" href="#home">Update</a></button></div>
-
             </div>
           </div>
           </div>
@@ -75,7 +77,6 @@ function display(){
   }
   document.querySelector(".fillByJS").innerHTML = html
 }
-
 function deletePage(index){
   bookmarksList.splice(index,1)
   display()
@@ -237,6 +238,7 @@ form.addEventListener("submit",function(e){
   e.preventDefault()
   checkInput();
 })
+
 function checkInput(){
   var nameValue = siteName.value.trim()
   var catValue = cat.value.trim()
@@ -262,4 +264,11 @@ function checkInput(){
   if(mainRegex.test(catValue) == true && mainRegex.test(nameValue)== true && regexURL.test(urlValue)==true){
     getPage()
   }
+}
+
+
+function addHttp() {
+    if (page.url.search("http://") == -1 && page.url.search("https://") == -1)
+        return "http://" + page.url;
+    return page.url;
 }
