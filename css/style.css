@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+.footer{
+  color: #aaaaaa;
+}
+.main{
+  background-color: #EEEEEE;
+}
+input:focus{
+  box-shadow:0px 0px 0px 0.25rem rgba(0, 0, 0, 0.333) !important;
+}
+@media (max-width: 767px) {
+  .inp-4,
+  .kill-round,
+  #searchReset {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+    }
+}
+@media (max-width: 574px ) {
+  .my-margin{
+    margin-top: 20px;
+  }
+}
+.fa-eye {
+  position: relative;
+}
+.fa-eye::after{
+  content: "Visits still under working..";
+  position: absolute;
+  top: 100%;
+  right:-50%;
+  transform:translateX(30%);
+  background-color: #31D2F2;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: .5s all;
+  -webkit-transform:translateX(30%);
+  -moz-transform:translateX(30%);
+  -ms-transform:translateX(30%);
+  -o-transform:translateX(30%);
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  z-index: 99999;
+}
+.fa-eye:hover::after{
+  opacity: 1;
+}

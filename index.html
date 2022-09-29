@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-sm">
+      <div class="mx-5">
+        <div class="border-bottom border-dark pb-3">
+          <h1 class="my-2 fw-bold py-5 fs-3 border-bottom border-dark">
+            Bookmarker
+          </h1>
+          <div class="p-5 mt-3 main mx-3">
+            <h3 class="text-center mb-5 fw-bold">
+              Bookmark your favorite sites
+            </h3>
+            <form class="mainForm"  action="">
+              <label for="siteName" class="text-center fw-semibold d-block my-3"
+                >Site Name</label
+              >
+              <input
+                class="form-control border-0 inp-1"
+                placeholder="Bookmark Name"
+                type="text"
+                id="siteName"
+              />
+              <div class="alert alert-name alert-danger d-none mt-3" role="alert">
+                Inavalid Site Name Please rewrite a valid name "Special characters [@!#$%^..] mustn't used"
+              </div>
+              <label for="siteName" class="text-center fw-semibold d-block my-3"
+                >Category</label
+              >
+              <input
+                class="form-control border-0 inp-2"
+                placeholder="Category"
+                type="text"
+                id="siteName"
+              />
+              <div class="alert alert-cat alert-danger d-none mt-3" role="alert">
+                Inavalid Category Name Please rewrite a valid name "Special characters [@!#$%^..] mustn't used"
+              </div>
+              <label for="SiteURL" class="text-center fw-semibold d-block my-3"
+                >Site URL</label
+              >
+              <input
+                class="form-control border-0 inp-3"
+                placeholder="Website URL"
+                type="text"
+                id="SiteURL"
+              />
+              <div class="alert alert-url alert-danger mt-3 d-none" role="alert">
+                Invalid URL! Please try again, if you don't know what is URL you
+                can visit
+                <a
+                  href="https://www.verisign.com/en_US/website-presence/online/what-is-a-url/index.xhtml"
+                  target="_blank"
+                  >What's URL</a
+                >
+                for more information.
+              </div>
+              <button
+                type=""
+                class="btn m-auto d-block btn-primary mt-4 submitPage text-white"
+                id="submitme"
+              >
+                Submit
+              </button>
+              <div class="input-group row my-3">
+                <button
+                  class="btn kill-round col-md-2 btn-outline-secondary"
+                  id="searchName"
+                  type="button"
+                >
+                  By Name
+                </button>
+                <button
+                  class="btn col-md-2 btn-outline-secondary"
+                  id="searchCat"
+                  type="button"
+                >
+                  By Category
+                </button>
+                <input
+                  type="text"
+                  class="inp-4 form-control col-md-8 col-sm-9"
+                  id="searchPlace"
+                  onkeyup="searchGlobal(this.value)"
+                  placeholder="Search.."
+                  aria-label="Example text with two button addons"
+                />
+                <button
+                  class="btn col-md-2 col-sm-3 btn-outline-secondary"
+                  id="searchReset"
+                  type="button"
+                >
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="mt-3 fillByJS"></div>
+        <div class="footer">
+          <p class="mx-3 py-4">&copy; 2019 Bookmarker Inc.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
