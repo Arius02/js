@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-sm">
-      <div class="mx-5">
+    <div class="container">
+      <div class="mx-5 killm">
         <div class="border-bottom border-dark pb-3">
           <h1 class="my-2 fw-bold py-5 fs-3 border-bottom border-dark">
             Bookmarker
@@ -66,21 +66,21 @@
               </div>
               <button
                 type=""
-                class="btn m-auto d-block btn-primary mt-4 submitPage text-white"
+                class="btn m-auto d-block btn-primary mt-4 submitPage text-white rounded-pill"
                 id="submitme"
               >
                 Submit
               </button>
               <div class="input-group row my-3">
                 <button
-                  class="btn kill-round col-md-2 btn-outline-secondary"
+                  class="btn kill-round col-md-2 rounded-pill mt-sm-3 none-d text-white btn-warning"
                   id="searchName"
                   type="button"
                 >
                   By Name
                 </button>
                 <button
-                  class="btn col-md-2 btn-outline-secondary"
+                  class="btn col-md-2 btn-info text-white none-d mt-sm-3 rounded-pill ms-md-2"
                   id="searchCat"
                   type="button"
                 >
@@ -88,14 +88,14 @@
                 </button>
                 <input
                   type="text"
-                  class="inp-4 form-control col-md-8 col-sm-9"
+                  class="inp-4 form-control rounded-pill col-md-8 mt-sm-3 none-d col-sm-9 mx-2"
                   id="searchPlace"
                   onkeyup="searchGlobal(this.value)"
                   placeholder="Search.."
                   aria-label="Example text with two button addons"
                 />
                 <button
-                  class="btn col-md-2 col-sm-3 btn-outline-secondary"
+                  class="btn col-md-2 col-sm-3 btn-danger none-d mt-sm-3 rounded-pill "
                   id="searchReset"
                   type="button"
                 >
