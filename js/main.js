@@ -230,7 +230,7 @@ function searchReset(){
 document.getElementById("searchReset").addEventListener("click", searchReset)
 document.getElementById("searchCat").addEventListener("click", byCat)
 document.getElementById("searchName").addEventListener("click", byName)
-var mainRegex= /^([a-zA-Z0-9@\.]{2,15})$/
+var mainRegex= /^([a-zA-Z0-9@.]{2,8}\s?[a-zA-Z0-9@.]{2,8}|[a-zA-Z0-9@.]{2,15})$/i
 var regexURL= /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/   
 var form = document.querySelector(".mainForm")
 
