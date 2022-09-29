@@ -88,13 +88,13 @@ function updatePage(index){
   document.querySelector(".submitPage").classList.replace("btn-primary", "btn-info")
   passingVar = index
 }
-let buttonHome = document.querySelector(".btn-success");
-var x;  let CountButtonHomeClicks = 0;
-buttonHome.addEventListener("click", function() {
-  CountButtonHomeClicks += 1;
-  document.querySelector("span").innerHTML= CountButtonHomeClicks
-  x = CountButtonHomeClicks
-});
+// let buttonHome = document.querySelector(".btn-success");
+// var x;  let CountButtonHomeClicks = 0;
+// buttonHome.addEventListener("click", function() {
+//   CountButtonHomeClicks += 1;
+//   document.querySelector("span").innerHTML= CountButtonHomeClicks
+//   x = CountButtonHomeClicks
+// });
 function searchGlobal(term){
   var html = ""
  if(document.getElementById("searchPlace").placeholder== "Search.."){
