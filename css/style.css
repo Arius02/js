@@ -23,8 +23,15 @@ input:focus{
     }
 }
 @media (max-width: 574px ) {
+  .killm{
+    width: 100% !important;
+    margin: 0 !important;
+  }
   .my-margin{
     margin-top: 20px;
+  }
+  .none-d{
+    margin-top: 10px;
   }
 }
 .fa-eye {
