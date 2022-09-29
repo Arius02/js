@@ -24,6 +24,7 @@ function getPage() {
     document.querySelector(".submitPage").innerHTML ="Add"
     document.querySelector(".submitPage").classList.replace("btn-info","btn-primary")
     bookmarksList[passingVar].name =  siteName.value;
+    bookmarksList[passingVar].cat= cat.value;
     bookmarksList[passingVar].url = siteURL.value;
     display()
     clear()
@@ -60,7 +61,7 @@ function display(){
               <div><button type="button"  class="btn btn-danger rounded-pill" onclick="deletePage(${i})">Delete</button></div>
             </div>
             <div class="col-sm-4 my-margin">
-              <div><button type="button" onclick="updatePage(${i})" class="btn rounded-pill btn-info text-white">Update</button></div>
+              <div><button type="button" onclick="updatePage(${i})" class="btn rounded-pill btn-info text-white"><a class="text-decoration-none text-white" href="#home">Update</a></button></div>
 
             </div>
           </div>
@@ -83,6 +84,7 @@ function deletePage(index){
 var passingVar;
 function updatePage(index){
   siteName.value= bookmarksList[index].name ;
+  cat.value= bookmarksList[index].cat;
   siteURL.value = bookmarksList[index].url;
   document.querySelector(".submitPage").innerHTML = "Update"
   document.querySelector(".submitPage").classList.replace("btn-primary", "btn-info")
@@ -227,7 +229,6 @@ function searchReset(){
 document.getElementById("searchReset").addEventListener("click", searchReset)
 document.getElementById("searchCat").addEventListener("click", byCat)
 document.getElementById("searchName").addEventListener("click", byName)
-
 var mainRegex= /^([a-zA-Z0-9@\.]{2,15})$/
 var regexURL= /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/   
 var form = document.querySelector(".mainForm")
