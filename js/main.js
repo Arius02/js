@@ -228,40 +228,6 @@ document.getElementById("searchReset").addEventListener("click", searchReset)
 document.getElementById("searchCat").addEventListener("click", byCat)
 document.getElementById("searchName").addEventListener("click", byName)
 
-// function validation(){
-//  if(regexURL.test(siteURL.value) && mainRegex.test(siteName.value) && mainRegex.test(cat.value)){
-//     document.querySelector(".alert-cat").classList.replace("d-none","d-block")
-//     document.querySelector(".alert-url").classList.replace("d-none","d-block")
-//   }
-//   if(regexURL.test(siteURL.value)== false){
-//     document.querySelector(".alert-name").classList.replace("d-none","d-block")
-//   }
-//   else if(regexURL.test(siteURL.value)== false){
-//     document.querySelector(".alert-name").classList.replace("d-none","d-block")
-//   }
-//   else if(regexURL.test(siteURL.value)== false){
-//     document.querySelector(".alert-name").classList.replace("d-none","d-block")
-//   }
-// }
-
-// document.getElementById("submitme").onsubmit= function(e){
-//    var mainRegex= /^([a-zA-Z0-9@\.]{2,15})$/
-//    var regexURL= /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/   
-//    if(mainRegex.test(siteName.value ==false)){
-//     e.preventDefault()
-//     document.querySelector(".alert-name").classList.replace("d-none","d-block")
-//    }
-//    else if(mainRegex.test(cat.value ==false)){
-//     e.preventDefault()
-//     document.querySelector(".alert-cat").classList.replace("d-none","d-block")
-//     }
-//    else if(regexURL.test(siteURL.value == false)){
-//     e.preventDefault()
-//     document.querySelector(".alert-url").classList.replace("d-none","d-block")
-//     }
-//     getPage()
-
-// }
 var mainRegex= /^([a-zA-Z0-9@\.]{2,15})$/
 var regexURL= /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/   
 var form = document.querySelector(".mainForm")
