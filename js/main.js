@@ -54,13 +54,13 @@ function display(){
           <div>
             <div class="row">
             <div class="col-sm-4 my-margin ">
-              <div><a href="${bookmarksList[i].url}" target="_blank"  class="btn btn-success">Visit</a></div>
+              <div><a href="${bookmarksList[i].url}" target="_blank"  class="btn btn-success rounded-pill">Visit</a></div>
             </div>
             <div class="col-sm-4 my-margin">
-              <div><button type="button"  class="btn btn-danger" onclick="deletePage(${i})">Delete</button></div>
+              <div><button type="button"  class="btn btn-danger rounded-pill" onclick="deletePage(${i})">Delete</button></div>
             </div>
             <div class="col-sm-4 my-margin">
-              <div><button type="button" onclick="updatePage(${i})" class="btn btn-info text-white">Update</button></div>
+              <div><button type="button" onclick="updatePage(${i})" class="btn rounded-pill btn-info text-white">Update</button></div>
 
             </div>
           </div>
